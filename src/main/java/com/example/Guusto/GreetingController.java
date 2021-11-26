@@ -19,12 +19,6 @@ public class GreetingController {
 		System.out.println("==== get greeting ====");
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
-	
-	@GetMapping("/greeting-javaconfig")
-	public Greeting greetingWithJavaconfig(@RequestParam(required = false, defaultValue = "World") String name) {
-		System.out.println("==== in greeting ====");
-		return new Greeting(counter.incrementAndGet(), String.format(template, name));
-	}
 
 	
 }

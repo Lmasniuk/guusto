@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Prepaid Mastercard",
+        "country": "USA"
+    },
+    {
+        "name": "1800 Flowers",
+        "country": "USA"
+    },
+    {
+        "name": "Airbnb",
+        "country": "USA"
+    },
+    {
+        "name": "Amazon",
+        "country": "USA"
+    },
+    {
+        "name": "AMC Theatres",
+        "country": "USA"
+    },
+    {
+        "name": "Gamestop",
+        "country": "USA"
+    },
+    {
+        "name": "Air Canada",
+        "country": "Canada"
+    },
+    {
+        "name": "America",
+        "country": "Canada"
+    },
+    {
+        "name": "Bannock",
+        "country": "Canada"
+    },
+    {
+        "name": "Cactus Club",
+        "country": "Canada"
+    },
+    {
+        "name": "Chop Steakhouse",
+        "country": "Canada"
+    }
+]
