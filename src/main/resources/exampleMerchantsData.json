@@ -20,7 +20,39 @@
         "country": "USA"
     },
     {
+        "name": "Cadillac Bar",
+        "country": "USA"
+    },
+    {
+        "name": "Charley's Crab",
+        "country": "USA"
+    },
+    {
+        "name": "Cabela's",
+        "country": "USA"
+    },
+    {
+        "name": "Claim Jumper",
+        "country": "USA"
+    },
+    {
+        "name": "Dos Caminos",
+        "country": "USA"
+    },
+    {
         "name": "Gamestop",
+        "country": "USA"
+    },
+    {
+        "name": "T-Rex Cafe",
+        "country": "USA"
+    },
+    {
+        "name": "Uber Eats",
+        "country": "USA"
+    },
+    {
+        "name": "Yak & Yeti",
         "country": "USA"
     },
     {
@@ -41,6 +73,30 @@
     },
     {
         "name": "Chop Steakhouse",
+        "country": "Canada"
+    },
+    {
+        "name": "Clough Club",
+        "country": "Canada"
+    },
+    {
+        "name": "Earls",
+        "country": "Canada"
+    },
+    {
+        "name": "Golf Town",
+        "country": "Canada"
+    },
+    {
+        "name": "Jump",
+        "country": "Canada"
+    },
+    {
+        "name": "Montana's",
+        "country": "Canada"
+    },
+    {
+        "name": "Winners",
         "country": "Canada"
     }
 ]
