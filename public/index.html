@@ -3,21 +3,30 @@
 	<head>
 		<title>Guusto Merchant Explorer</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     	<script src="main.js"></script>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-
 	<body>
 		<div id="container">
 			<h1>Guusto Merchant Explorer</h1>
 			<div ng-controller="Merchants">
-				<h2>Number of Merchants: {{merchants.length}}</h2>
+				<h2>Total Number of Merchants: {{merchants.length}}</h2>
+				<div>
+					<input type="radio" onclick="javascript:countryVisibility()" id="all-countries" name="country_select" value="All">
+					<label for="all-countries">ALL</label>
+					<input type="radio" onclick="javascript:countryVisibility()" id="canada" name="country_select" value="Canada">
+					<label for="canada">CANADA</label><br>
+					<input type="radio" onclick="javascript:countryVisibility()" id="usa" name="country_select" value="USA">
+					<label for="usa">USA</label><br>
+				</div>
+				<br><br>
 				<table>
 					<tr>
 						<td><b>Name</b></td>
 						<td><b>Country</b></td>
 					</tr>
-					<tr ng-repeat="merchant in merchants">
+					<tr class="merchant-listing" ng-repeat="merchant in merchants">
 						<td>{{ merchant.name }}</td>
 						<td>{{ merchant.country }}</td>
 					</tr>
