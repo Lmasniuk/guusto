@@ -27,10 +27,6 @@ public class MerchantController {
         try {
             InputStream inputStream = new FileInputStream(new File("./src/main/resources/exampleMerchantsData.json"));
             merchants = Arrays.asList(mapper.readValue(inputStream, Merchant[].class));
-
-            for(Merchant m: merchants) {
-                System.out.println(m);
-            }
         }
         catch (IOException e)
         {

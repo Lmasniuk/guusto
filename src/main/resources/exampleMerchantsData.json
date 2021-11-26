@@ -20,6 +20,34 @@
         "country": "USA"
     },
     {
+        "name": "Applebee's",
+        "country": "USA"
+    },
+    {
+        "name": "Aquarium",
+        "country": "USA"
+    },
+    {
+        "name": "Athleta",
+        "country": "USA"
+    },
+    {
+        "name": "Atlantic Grill",
+        "country": "USA"
+    },
+    {
+        "name": "Babin's",
+        "country": "USA"
+    },
+    {
+        "name": "Bahama Breeze",
+        "country": "USA"
+    },
+    {
+        "name": "Banana Republic",
+        "country": "USA"
+    },
+    {
         "name": "Cadillac Bar",
         "country": "USA"
     },
@@ -60,11 +88,47 @@
         "country": "Canada"
     },
     {
+        "name": "Amazon",
+        "country": "Canada"
+    },
+    {
         "name": "America",
         "country": "Canada"
     },
     {
+        "name": "Auberge du Pommier",
+        "country": "Canada"
+    },
+    {
+        "name": "Banana Republic",
+        "country": "Canada"
+    },
+    {
         "name": "Bannock",
+        "country": "Canada"
+    },
+    {
+        "name": "Bass Pro",
+        "country": "Canada"
+    },
+    {
+        "name": "Baxters Landing",
+        "country": "Canada"
+    },
+    {
+        "name": "Beaumont Kitchen",
+        "country": "Canada"
+    },
+    {
+        "name": "Best Buy",
+        "country": "Canada"
+    },
+    {
+        "name": "Bier Markt",
+        "country": "Canada"
+    },
+    {
+        "name": "Bimini",
         "country": "Canada"
     },
     {
@@ -80,6 +144,10 @@
         "country": "Canada"
     },
     {
+        "name": "Coast",
+        "country": "Canada"
+    },
+    {
         "name": "Earls",
         "country": "Canada"
     },
@@ -92,7 +160,35 @@
         "country": "Canada"
     },
     {
+        "name": "Marble Slab Creamery",
+        "country": "Canada"
+    },
+    {
+        "name": "Milestones",
+        "country": "Canada"
+    },
+    {
         "name": "Montana's",
+        "country": "Canada"
+    },
+    {
+        "name": "ONYX Steakhouse",
+        "country": "Canada"
+    },
+    {
+        "name": "Original Joe's",
+        "country": "Canada"
+    },
+    {
+        "name": "Red Lobster",
+        "country": "Canada"
+    },
+    {
+        "name": "Roots",
+        "country": "Canada"
+    },
+    {
+        "name": "Scaddabush",
         "country": "Canada"
     },
     {
