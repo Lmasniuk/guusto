@@ -1,6 +1,9 @@
 package com.example.Guusto;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -21,11 +24,17 @@ public class MerchantController {
     ) 
     {
         ObjectMapper mapper = new ObjectMapper();
-
-        String jsonMerchant = getMerchants();
-        System.out.println(jsonMerchant);
         
         try {
+            //Get JSON array and print each Array element out
+            InputStream inputStream = new FileInputStream(new File("./src/main/resources/exampleMerchantsData.json"));
+            Merchant[] merchants = mapper.readValue(inputStream, Merchant[].class);
+            for(Merchant m: merchants) {
+                System.out.println(m);
+            }
+
+            //Return a single merchant
+            String jsonMerchant = getMerchants();
             Merchant merchant = mapper.readValue(jsonMerchant, Merchant.class);
             return merchant;
         }

@@ -23,5 +23,9 @@ public class Merchant {
     public String getCountry() {
 		return country;
 	}
+
+    public String toString() {
+        return "Merchant Name: " + name + " ----- Merchant Country: " + country;
+    }
     
 }
