@@ -16,8 +16,18 @@ Clone the repository by running the following command:
 git clone git@github.com:Lmasniuk/guusto.git
 ```
 
-### Build the Application
-Start the application by running the following command:
+## Building & Running the Application
+
+### Locally
+You can run the app locally by running the following command
+```
+./mvnw spring-boot:run
+```
+### Docker
+
+#### Build the Application
+In order for the Dockerfile to create a Docker image properly, you will need to create a build package first.
+Build the application by running the following command:
 ```
 ./mvnw package 
 ```
@@ -28,7 +38,7 @@ docker build -t guusto-merchant-explorer .
 docker run -p 8080:8080 guusto-merchant-explorer
 ```
 
-### View the Application
+## View the Application
 Navigate to http://localhost:8080
 
 
