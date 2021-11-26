@@ -1,10 +1,10 @@
 package com.example.Guusto;
 
-import java.nio.file.Path;
-import java.util.concurrent.atomic.AtomicLong;
+import java.io.IOException;
 
-import org.apache.tomcat.util.json.JSONParser;
-import org.springframework.util.ResourceUtils;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.json.JSONObject;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,18 +13,35 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MerchantController {
 
-    private final AtomicLong counter = new AtomicLong();
-
     @CrossOrigin(origins = "http://localhost:8080")
 	@GetMapping("/merchants")
-	public Merchant greeting(
+	public Merchant getMerchants(
         @RequestParam(value = "name", defaultValue = "Example Merchant") String name,
         @RequestParam(value = "country", defaultValue = "Example Country") String country
     ) 
     {
-		System.out.println("==== get merchant ====");
-        return new Merchant(counter.incrementAndGet(), name, country);
+        ObjectMapper mapper = new ObjectMapper();
+
+        String jsonMerchant = getMerchants();
+        System.out.println(jsonMerchant);
+        
+        try {
+            Merchant merchant = mapper.readValue(jsonMerchant, Merchant.class);
+            return merchant;
+        }
+        catch (IOException e)
+        {
+            System.out.println("Exception Encountered");
+        }
+        
+        return new Merchant(name, country);
 	}
 
-	
+    public String getMerchants(){
+        JSONObject merchant = new JSONObject();
+        merchant.put("name", "Cactus Club");
+        merchant.put("country", "Canada");
+
+        return merchant.toString();
+    }	
 }
